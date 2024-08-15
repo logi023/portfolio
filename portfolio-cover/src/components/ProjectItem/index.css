@@ -1,0 +1,28 @@
+.project-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+  padding-bottom: 4rem;
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.project-item .item-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.project-item .item-thumb {
+  width: 17.4rem;
+  height: 9rem;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.project-item .item-thumb img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}

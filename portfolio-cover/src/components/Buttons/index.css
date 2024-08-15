@@ -1,0 +1,7 @@
+.btn-more {
+  font-size: 1.6rem;
+  color: #888;
+  padding-right: 3.2rem;
+  background: url(/src/assets/arrow-right-circle.svg) no-repeat center right / 20px;
+  position: relative;
+}

@@ -1,0 +1,14 @@
+.main-section {
+  margin-bottom: 16rem;
+}
+.section-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-title {
+  color: #888;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 3.2rem;
+}
