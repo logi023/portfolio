@@ -29,3 +29,10 @@
 .main-section__about .main-section:first-child {
   margin-bottom: 8rem;
 }
+.main-section__post .section-content-wrap {
+  display: flex;
+  gap: 40px;
+}
+.main-section__post .section-content-wrap .post-item {
+  width: 100%;
+}

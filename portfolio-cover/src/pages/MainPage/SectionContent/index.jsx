@@ -3,6 +3,7 @@ import ContentContainer from '../../../components/ContentContainer';
 import Label from '../../../components/Label';
 import MoreBtn from '../../../components/Buttons/MoreBtn';
 import ProjectItem from '../../../components/ProjectItem';
+import PostItem from '../../../components/PostItem';
 import './index.css';
 
 const mySkills = ['HTML', 'CSS', 'jQuery', 'javascript'];
@@ -24,6 +25,20 @@ const projects = [
     imageSrc: "/src/assets/dummy-img3.jpg",
   }
 ];
+const postItems = [
+  {
+    linkUrl: '',
+    title: '포스트 제목1',
+    desc: '포스트 설명1 포스트 설명1 포스트 설명1 포스트 설명1 포스트 설명1 포스트 설명1 포스트 설명1 포스트 설명1 포스트 설명1 포스트 설명1',
+    imgUrl: "/src/assets/dummy-img.jpg",
+  },
+  {
+    linkUrl: '',
+    title: '포스트 제목2',
+    desc: '포스트 설명2',
+    imgUrl: '2',
+  },
+]
 
 function SectionContent() {
   return (
@@ -90,7 +105,25 @@ function SectionContent() {
           </section>
           
           {/* post section */}
-          <section id='section-post' className='main-section__post'></section>
+          <section id='section-post' className='main-section__post'>
+            <ContentContainer>
+                <div className="section-title-wrap">
+                  <h3 className='section-title'>RECENT INTERESTS</h3>
+                  <MoreBtn>#none</MoreBtn>
+                </div>
+                <div className='section-content-wrap'>
+                  {postItems.map((post, index) => (
+                    <PostItem 
+                      key={index}
+                      linkUrl={post.linkUrl}
+                      imgUrl={post.imgUrl}
+                      title={post.title}
+                      desc={post.desc}
+                    />
+                  ))}
+                </div>
+            </ContentContainer>
+          </section>
           
           {/* contact section */}
           <section id='section-contact' className='main-section__contact'></section>
