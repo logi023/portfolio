@@ -3,7 +3,7 @@ import './index.css';
 function Footer() {
   return (
     <footer className='footer'>
-      footer
+      <p>Made by EESEUL @2024</p>
     </footer>
   )
 }

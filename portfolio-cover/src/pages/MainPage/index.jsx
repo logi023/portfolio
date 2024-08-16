@@ -1,4 +1,5 @@
 import Header from '../../Layout/Header';
+import Footer from '../../Layout/Footer';
 import SectionIntro from './SectionIntro';
 import SectionContent from './SectionContent';
 import './index.css';
@@ -15,6 +16,8 @@ function MainPage() {
       {/* content container */}
       <SectionContent />
       
+      {/* footer */}
+      <Footer />
     </div>
   )
 }
