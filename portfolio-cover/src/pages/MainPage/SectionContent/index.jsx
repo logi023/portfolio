@@ -10,11 +10,13 @@ const mySkills = ['HTML', 'CSS', 'jQuery', 'javascript'];
 const experiencedSkills = ['react.js', 'Vue.js', 'SASS/SCSS', 'Gsap'];
 const projects = [
   {
+    projectURl: '',
     title: "Name1",
     description: "어쩌구저쩌구",
     imageSrc: "/src/assets/dummy-img.jpg",
   },
   {
+    projectURl: '',
     title: "Name2",
     description: "Name2 설명",
     imageSrc: "/src/assets/dummy-img2.jpg",
@@ -95,6 +97,7 @@ function SectionContent() {
                 {projects.map((project, index) => (
                   <ProjectItem
                     key={index}
+                    projectURl={project.projectURl}
                     title={project.title}
                     description={project.description}
                     imageSrc={project.imageSrc}
