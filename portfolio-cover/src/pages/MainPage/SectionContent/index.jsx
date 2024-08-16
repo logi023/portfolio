@@ -4,6 +4,7 @@ import Label from '../../../components/Label';
 import MoreBtn from '../../../components/Buttons/MoreBtn';
 import ProjectItem from '../../../components/ProjectItem';
 import PostItem from '../../../components/PostItem';
+import ContactItem from '../../../components/ContactItem';
 import './index.css';
 
 const mySkills = ['HTML', 'CSS', 'jQuery', 'javascript'];
@@ -39,6 +40,20 @@ const postItems = [
     title: '포스트 제목2',
     desc: '포스트 설명2',
     imgUrl: '2',
+  },
+]
+const contactItems = [
+  {
+    logo: '/src/assets/icon-github.png',
+    icon: 'link',
+    text: 'logi023',
+    url: 'https://github.com/logi023',
+  },
+  {
+    logo: '/src/assets/icon-mail.svg',
+    icon: 'copy',
+    text: 'sseul23@gmail.com',
+    url: 'sseul23@gmail.com',
   },
 ]
 
@@ -129,7 +144,25 @@ function SectionContent() {
           </section>
           
           {/* contact section */}
-          <section id='section-contact' className='main-section__contact'></section>
+          <section id='section-contact' className='main-section__contact'>
+            <ContentContainer>
+                <h3 className='section-title'>Contact</h3>
+                <div className="section-desc">
+                  <p>합류 및 협업 제안이 있으시다면 언제든지 연락해주세요!<br />2~3일 내로 답장을 드릴게요.</p>
+                </div>
+                <div className='section-content-wrap'>
+                  {contactItems.map((item, index) => (
+                    <ContactItem 
+                      key={index}
+                      logo={item.logo}
+                      icon={item.icon}
+                      text={item.text}
+                      url={item.url}
+                    />
+                  ))}
+                </div>
+            </ContentContainer>
+          </section>
         </div>
       </div>
     </div>

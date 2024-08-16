@@ -36,3 +36,9 @@
 .main-section__post .section-content-wrap .post-item {
   width: 100%;
 }
+.main-section__contact .section-desc {
+  margin-bottom: 4rem;
+}
+.main-section__contact .contact-item {
+  margin-top: 2rem;
+}

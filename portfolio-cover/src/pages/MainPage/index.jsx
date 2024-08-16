@@ -1,10 +1,7 @@
 import Header from '../../Layout/Header';
-
 import SectionIntro from './SectionIntro';
 import SectionContent from './SectionContent';
-
 import './index.css';
-
 
 function MainPage() {
   return (

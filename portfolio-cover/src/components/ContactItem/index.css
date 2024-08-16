@@ -1,0 +1,35 @@
+.contact-item {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem 4rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.contact-item .logo {
+  width: 60px;
+}
+.contact-item .content {
+  font-size: 2rem;
+}
+.contact-item .content .button {
+  background: none;
+  color: #fff;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+.contact-item .content .button .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+.contact-item .content .button .icon.link {
+  background-image: url(/src/assets/external-link.svg);
+}
+.contact-item .content .button .icon.copy {
+  background-image: url(/src/assets/copy.svg);
+}
