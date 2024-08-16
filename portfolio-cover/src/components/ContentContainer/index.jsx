@@ -1,6 +1,6 @@
 import './index.css';
 
-function MainSection({children}) {
+function ContentContainer({children}) {
   return (
     <div className='main-section'>
       {children}
@@ -8,4 +8,4 @@ function MainSection({children}) {
   )
 }
 
-export default MainSection
+export default ContentContainer

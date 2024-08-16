@@ -1,0 +1,31 @@
+.section-content {
+  background: #000;
+  color: #fff;
+  padding: 100px 0;
+}
+.section-content .inner {
+  display: flex;
+  gap: 40px;
+}
+.section-content .side-bar {
+  width: 200px;
+}
+.section-content .content-side {
+  width: calc(100% - 240px);
+}
+.main-section__about {
+  display: flex;
+  gap: 4rem;
+}
+.main-section__about .img-wrap {
+  width: 32rem;
+  height: 32rem;
+  background: rgba(147, 147, 147, 0.55);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section__about .main-section:first-child {
+  margin-bottom: 8rem;
+}
