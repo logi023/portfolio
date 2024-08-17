@@ -1,0 +1,25 @@
+.side-bar .side-bar-menu {
+    font-size: 2.6rem;
+    margin-bottom: 1.6rem;
+    font-weight: 600;
+    position: relative;
+}
+.side-bar .side-bar-menu a {
+    position: relative;
+}
+.side-bar .side-bar-menu a:after {
+    content: '';
+    position: absolute;
+    right: -2.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50px;
+    background: #46FF85;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+.side-bar .side-bar-menu.active a:after {
+    opacity: 1;
+}

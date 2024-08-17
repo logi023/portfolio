@@ -9,6 +9,9 @@
 }
 .section-content .side-bar {
   width: 200px;
+  height: 100%;
+  position: sticky;
+  top: 2rem;
 }
 .section-content .content-side {
   width: calc(100% - 240px);

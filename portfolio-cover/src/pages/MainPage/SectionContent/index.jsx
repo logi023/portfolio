@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { useEffect } from 'react';
+
 import SideBar from '../../../Layout/SideBar';
 import ContentContainer from '../../../components/ContentContainer';
 import Label from '../../../components/Label';
@@ -57,13 +60,59 @@ const contactItems = [
   },
 ]
 
+
 function SectionContent() {
+  const [activeItemIndex, setActiveItemIndex] = useState(0);
+
+  useEffect(() => {
+    let scrollTimeout = null;
+  
+    const handleScroll = () => {
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+  
+      scrollTimeout = setTimeout(() => {
+        const aboutSection = document.getElementById('section-about');
+        const projectSection = document.getElementById('section-project');
+        const postSection = document.getElementById('section-post');
+        const contactSection = document.getElementById('section-contact');
+  
+        const scrollPosition = window.scrollY + window.innerHeight / 2;
+  
+        let newIndex = 0;  
+        if (scrollPosition >= contactSection.offsetTop) {
+          newIndex = 3;
+        } else if (scrollPosition >= postSection.offsetTop) {
+          newIndex = 2;
+        } else if (scrollPosition >= projectSection.offsetTop) {
+          newIndex = 1;
+        } else if (scrollPosition >= aboutSection.offsetTop) {
+          newIndex = 0;
+        }  
+        setActiveItemIndex(newIndex);
+      }, 30);
+    };
+  
+    window.addEventListener('scroll', handleScroll);  
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+    };
+  }, []);
+
   return (
     <div className="section-content">
       <div className="inner">
 
         {/* side bar */}
-        <SideBar />
+        <SideBar 
+          activeItemIndex={activeItemIndex}
+          setActiveItemIndex={setActiveItemIndex}
+        />
 
         <div className="content-side">
           
