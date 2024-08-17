@@ -25,7 +25,6 @@ function SideBar({ activeItemIndex, setActiveItemIndex }) {
           </li>
         ))}
       </ul>
-      {console.log(activeItemIndex)}
     </nav>
   );
 }

@@ -23,3 +23,16 @@
 .side-bar .side-bar-menu.active a:after {
     opacity: 1;
 }
+
+@media screen and (max-width: 1024px) {
+    .side-bar .side-bar-menu {
+        font-size: 1.8rem;
+    }
+    .side-bar .side-bar-menu a:after {
+        width: 0.8rem;
+        height: 0.8rem;
+        right: -1.6rem;
+        top: 2px;
+        transform: translateY(0);
+    }
+}

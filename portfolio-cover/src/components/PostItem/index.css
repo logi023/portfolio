@@ -18,12 +18,12 @@
   transform: translate(-50%, -50%);
 }
 .post-item .text-container {
-  padding: 40px;
+  padding: 4rem;
   background: #fff;
   color: #000;
 }
 .post-item .text-container .title {
-  font-size: 23px;
+  font-size: 2.3rem;
   font-weight: 500;
 }
 .post-item .text-container .desc {
@@ -35,4 +35,16 @@
   -webkit-box-orient: vertical;
   word-break: keep-all;
   height: 65px;
+}
+
+@media screen and (max-width: 1024px) {
+  .post-item .text-container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post-item .text-container .desc {
+    height: 45px;
+  }
 }

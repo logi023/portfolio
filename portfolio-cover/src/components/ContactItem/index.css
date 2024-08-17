@@ -7,7 +7,7 @@
   gap: 36px;
 }
 .contact-item .logo {
-  width: 60px;
+  width: 6rem;
 }
 .contact-item .content {
   font-size: 2rem;
@@ -16,7 +16,7 @@
   background: none;
   color: #fff;
   border: 0;
-  font-size: 20px;
+  font-size: 2rem;
   cursor: pointer;
 }
 .contact-item .content .button .icon {
